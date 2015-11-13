@@ -56,6 +56,12 @@ README
 
 	We have yet to figure out the efficient use of the distribution of the parking interval.
 	We also have to come up with an input file that has all the user configurable parameters.
+	
+6. Updates after First Commit :
+	
+	Made config.properties where the user configured parameters are read to initilaize the simulation.
+	The distribution variance and mean were fine tuned.
+	
 
 ####################################################################################################################
 	
