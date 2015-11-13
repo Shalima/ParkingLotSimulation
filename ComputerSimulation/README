@@ -1,0 +1,61 @@
+###################################################################
+READ ME
+###################################################################
+
+Shalima Sidhik, Nico Enriquez 
+CS 558, Fall 2015
+Assignment #1 : Parking Lot Simulation
+README
+
+#####################################################################
+
+1. Files included in the project
+
+	a. AssignmetMain.java 
+		Program starts from here.
+	b. Car.java
+		Represents the car and contains the respective attributes.
+	c. ParkingSystem.java
+		Represents the parking system. Contains the statistical counters.
+	d. Event.java
+		Contains the interface for the events.
+	e. EntryEvent.java
+		Represents the entry event when the car enters the entry queue.
+	f. ParkEvent.java
+		Represents the parked event. Has the list of cars parked which is a priority queue which uses the time 
+		comparator to compare the time the car leaves the lot.
+	g. ExitEvent.java
+		Represents the exit event when the car enters the exit queue.
+	h. DepartureEvent.java
+		Represents the departure event when the car exits out of the system.
+	i. TimeComparator.java
+		Used to compare the priority queue items.
+	j. Test files.
+
+	
+2. Compile.
+	
+	javac AssignmentMain.java
+	
+3. Run
+
+	java AssignmentMain
+	
+4. Design Decisions.
+	
+	We have decided to use Java and use the object oriented benefits. We have a parking system which 
+	has a list of cars that enter the system, number of parking spots, list of cars parked 
+	and entry queue and an exit queue.
+	
+	We used a priority queue for the list of cars parked which will compare the time that the car enters
+	the exit queue and sort as per the order. 
+	
+	The end of simulation happens when the total number of cars that has entered the system becomes 50.
+	
+5. Deficiencies
+
+	We have yet to figure out the efficient use of the distribution of the parking interval.
+	We also have to come up with an input file that has all the user configurable parameters.
+
+####################################################################################################################
+	
